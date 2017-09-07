@@ -1,0 +1,13 @@
+{
+  "require": {
+    "johnpbloch/wordpress": "4.8.1"
+  },
+  "extra": {
+    "wordpress-install-dir": "wordpress"
+  },
+  "scripts": {
+    "server": [
+      "echo http://0.0.0.0:5000 && php -S 0.0.0.0:5000 -t wordpress"
+    ]
+  }
+}
