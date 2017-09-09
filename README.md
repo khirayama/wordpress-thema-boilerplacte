@@ -27,3 +27,30 @@ $ npm install
 $ npm run dev
 # Access http://0.0.0.0:5000
 ```
+
+## Plugins
+
+- `JP Markdown`: Support Markdown
+
+## Memo
+
+- Support Browser
+- PC/SP/Responsive
+- AMP/PWA
+- SNS/OGP
+- Schedule
+- GoogleAnalytics
+
+## SEO
+
+- [ ] robots.txt
+- [ ] RSS
+- [ ] Sitemap
+  - [ ] HTML Sitemap
+  - [ ] XML Sitemap
+  - [ ] XML movie
+  - [ ] XML image
+  - [ ] XML news
+- [ ] 
+
+Ref: http://qiita.com/rorensu2236/items/a2cd209af4dda59557a5
