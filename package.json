@@ -4,13 +4,15 @@
   "description": "## Get started",
   "main": "index.js",
   "scripts": {
-    "dev": "rm -rf wordpress/wp-content/themes/original && mkdir wordpress/wp-content/themes/original && (composer run-script server & concurrently 'npm run bundle:scripts:watch' 'npm run build:styles:watch' 'npm run copy:files:watch')",
+    "dev": "npm run clean && mkdir wordpress/wp-content/themes/original && npm run build && (composer run-script server & concurrently 'npm run bundle:scripts:watch' 'npm run build:styles:watch' 'npm run copy:files:watch')",
+    "build": "npm run clean && (npm run bundle:scripts & npm run build:styles) && npm run copy:files",
+    "clean": "rm -rf wordpress/wp-content/themes/original",
     "copy:files": "cpx 'theme/**/*' wordpress/wp-content/themes/original",
     "copy:files:watch": "cpx -w 'theme/**/*' wordpress/wp-content/themes/original",
     "bundle:scripts": "browserify src/index.js -o theme/bundle.js -t envify -t babelify",
     "bundle:scripts:watch": "watchify src/index.js -o theme/bundle.js -t envify -t babelify",
-    "build:styles": "postcss -c .postcssrc.js src/styles/index.css -o theme/styles/index.css",
-    "build:styles:watch": "postcss -c .postcssrc.js -w src/styles/index.css -o theme/styles/index.css",
+    "build:styles": "postcss -c .postcssrc.js src/styles/index.css -o theme/index.css",
+    "build:styles:watch": "postcss -c .postcssrc.js -w src/styles/index.css -o theme/index.css",
     "lint": "eslint --ignore-path .gitignore src test",
     "lint:fix": "eslint --ignore-path .gitignore --fix src test",
     "check": "npm-check-updates"
