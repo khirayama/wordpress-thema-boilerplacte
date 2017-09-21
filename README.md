@@ -53,4 +53,9 @@ $ npm run dev
   - [ ] XML news
 - [ ] 
 
-Ref: http://qiita.com/rorensu2236/items/a2cd209af4dda59557a5
+## Refs
+
+- http://qiita.com/rorensu2236/items/a2cd209af4dda59557a5
+- https://www.webcreatorbox.com/tech/wordpress3-original-theme
+- https://wpdocs.osdn.jp/%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E3%82%BF%E3%82%B0
+- https://wpdocs.osdn.jp/%E6%9D%A1%E4%BB%B6%E5%88%86%E5%B2%90%E3%82%BF%E3%82%B0
